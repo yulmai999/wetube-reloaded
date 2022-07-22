@@ -4,7 +4,7 @@ import { tranding } from "../controllers/videoController";
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", handleHome);
-globalRouter.get("/join", handleJoin);
+globalRouter.get("/", tranding);
+globalRouter.get("/join", join);
 
 export default globalRouter;
