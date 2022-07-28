@@ -1,4 +1,4 @@
-export const tranding = (req, res) => res.render("home");
+export const tranding = (req, res) => res.render("home", { pageTitle: "Home" });
 export const see = (req, res) => {
   return res.render("watch");
 };
