@@ -1,4 +1,22 @@
-export const tranding = (req, res) => res.render("home", { pageTitle: "Home" });
+const fakeUser = {
+  username: "Nicolas",
+  loggedIn: true,
+};
+
+export const tranding = (req, res) => {
+  const videos = [
+    {
+      title: "Hello",
+    },
+    {
+      title: "Video #2",
+    },
+    {
+      title: "Whatsup",
+    },
+  ];
+  return res.render("home", { pageTitle: "Home", videos });
+};
 export const see = (req, res) => {
   return res.render("watch");
 };
